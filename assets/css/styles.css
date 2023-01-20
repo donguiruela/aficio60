@@ -6,17 +6,24 @@
   /* Custom font weight */
   --font-semi: 600;  
   
-  /* Custom height */
-  --header-height: 5rem;
-  
+  /* Custom height */  
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  --mb-10: 5rem;
+
   /* Custom color */
   --main-color: #1d1d1d;
-  --main-font-color : #ffffff;
+  --main-font-color: #ffffff;
+  --secondary-font-color :#111;
   --highlight-color: #66FF00;
 }
 
 body{
-  background-color: var(--main-color);  
+  background: var(--main-color);  
   color: var(--main-font-color);
   font-family: var(--body-font);  
 }  
@@ -26,17 +33,19 @@ header{
   left: 0;  
   right: 0;     
   top: -5px;
-  height: var(--header-height);
+  height: var(--mb-10);
   display: inline;  
   align-items: center;  
   box-shadow: 0 0 25px 0 black;
   padding: 0 100px;  
   padding-top: 25px;
+  background-color: var(--main-color);
+  z-index: 1; 
 }
 
 nav{  
   height: var(--header-height);
-  font-weight: var(--font-semi);
+  font-weight: var(--font-semi);  
 }
 
 ul {
@@ -47,17 +56,20 @@ li {
   float: left;  
 }
 
-li a {  
-  display: inline;
+a {  
   color: white;
-  text-align: center;
-  padding: 40px 50px;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+li a {
+  display: inline;  
+  text-align: center;
+  padding: 40px 50px;  
+}
+
+/* Change the link color to var(--secondary-font-color) on hover */
 li a:hover {
-  background-color: #111;  
+  background: var(--secondary-font-color);  
   border-radius: 0px 50px;
 }
 
@@ -67,8 +79,16 @@ li:last-child {
 
 /* Custom class */
 
+.menuitem {
+  visibility: hidden;
+}
+
 .highlight-color, .active {
   color: var(--highlight-color);
+}
+
+.downloadable {
+  margin-left: 100px;
 }
 
 .nav-container {
@@ -87,5 +107,88 @@ li:last-child {
 
 .nav-options {   
   grid-area: right; 
-  margin-top: 1.5rem;  
+  margin-top: var(--mb-3);  
+}
+
+.section-title {
+  text-align: center;
+}
+
+.bx-size {  
+  height: 50px;
+  font-size: 40px;
+}
+
+/* Contact */
+
+#contact {
+  padding-top: 195px;
+  height: 450px;
+}
+
+.contact-grid {
+  display: grid;  
+  grid-template-areas:
+  'email phone locate';
+  width: 60%;  
+  margin: auto;
+  margin-top: var(--mb-10);
+}
+
+.contact-card {
+  height: 200px;
+  width: 300px;
+  background: var(--secondary-font-color);
+  margin: auto;
+  border-radius: 20px;
+  display: table;
+}
+
+.contact-email{
+  grid-area: email;  
+}
+
+.contact-phone{
+  grid-area: phone;  
+}
+
+.contact-locate{
+  grid-area: locate;  
+}
+
+.contact-text {  
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;  
+}
+
+/* Footer */
+
+.footer{
+  background: var(--main-color);
+  color: var(--main-font-color);
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: var(--mb-4) 0;
+}
+
+.footer_title{
+  font-size: var(--mb-4);
+  margin-bottom: var(--mb-4);
+}
+
+.footer_des{
+  margin-bottom: var(--mb-3);
+  font-size: var(--mb-2);
+}
+
+.footer_social{
+  margin-bottom: var(--mb-4);
+}
+
+.footer_icon{
+  font-size:var(--mb-3);
+  color: var(--main-font-color);
+  margin: 0 var(--mb-2)
 }
