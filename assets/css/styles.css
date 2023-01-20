@@ -34,7 +34,7 @@ header{
   padding-top: 25px;
 }
 
-.nav{  
+nav{  
   height: var(--header-height);
   font-weight: var(--font-semi);
 }
