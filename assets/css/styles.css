@@ -7,6 +7,7 @@
   --font-semi: 600;  
   
   /* Custom height */  
+  --mb-0: 0.25rem;
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -33,7 +34,7 @@ header {
   left: 0;  
   right: 0;     
   top: -5px;
-  height: var(--mb-10);
+  height: var(--mb-6);
   display: inline;  
   align-items: center;  
   box-shadow: 0 0 25px 0 black;
@@ -64,7 +65,7 @@ a {
 li a {
   display: inline;  
   text-align: center;
-  padding: 40px 50px;  
+  padding: 25px 50px;  
 }
 
 /* Change the link color to var(--secondary-font-color) on hover */
@@ -83,8 +84,7 @@ li a:hover {
   color: var(--highlight-color);
 }
 
-.nav-container {    
-  top: var(--header-height);  
+.nav-container {      
   display: flex;  
 }
 
@@ -93,6 +93,7 @@ li a:hover {
 }
 
 .logo {      
+  margin-top: var(--mb-0);
   left: 100px;
   width: 100px;
 }
@@ -101,7 +102,7 @@ li a:hover {
   position: fixed;
   left: 35%;
   right: 35%;
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-1);
 }
 
 .section-title {
@@ -112,7 +113,7 @@ li a:hover {
   display: table;
   position: fixed;
   right: 100px;
-  top: 27px;
+  top: 10px;
   height: 50px;
   width: 175px;
 }
@@ -133,11 +134,11 @@ li a:hover {
 /* Section */
 
 #portfolio, #about, #contact {
-  padding-top: 195px;  
+  padding-top: 125px;  
 }
 
 #portfolio, #about { 
-  height: 900px;
+  height: 825px;
 }
 
 #about {
@@ -147,7 +148,7 @@ li a:hover {
 }
 
 #contact {
-  height: 450px;
+  height: 550px;
 }
 
 .about-div {  
@@ -232,7 +233,7 @@ li a:hover {
   margin: 0 var(--mb-2)
 }
 
-@media screen and (max-width: 1800px) {
+@media (max-width: 1800px) {
   .nav-options {    
     left: 25%;
     right: 25%;    
@@ -244,7 +245,7 @@ li a:hover {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media (max-width: 1199.98px) {
   .nav-options {    
     left: 20%;
     right: 20%;    
@@ -263,7 +264,7 @@ li a:hover {
   }  
 }
 
-@media screen and (max-width: 900px) {  
+@media (max-width: 991.98px) {  
   .nav-options {    
     left: 22%;
     right: 22%;    
@@ -310,7 +311,7 @@ li a:hover {
   } 
 }
 
-@media screen and (max-width: 705px) {
+@media (max-width: 767.98px) {
   body {
     padding: 5px;
   }
