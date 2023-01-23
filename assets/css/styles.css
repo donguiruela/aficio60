@@ -395,6 +395,6 @@ div, .div-art, .div-gamedev, .div-webapp {
 
   iframe { 
     transform-origin: 0 0;    
-    scale: 0.2;    
+    scale: 0.5;    
   }
 }
