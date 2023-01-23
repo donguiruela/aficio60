@@ -19,11 +19,12 @@
   /* Custom color */
   --main-color: #1d1d1d;
   --main-font-color: #ffffff;
-  --secondary-font-color :#111;
-  --highlight-color: #66FF00;
+  --secondary-font-color: #111111;
+  --highlight-color: #66FF00;  
 }
 
 body {  
+  margin: 0;
   background: var(--main-color);  
   color: var(--main-font-color);
   font-family: var(--body-font);  
@@ -37,7 +38,7 @@ header {
   height: var(--mb-6);
   display: inline;  
   align-items: center;  
-  box-shadow: 0 0 25px 0 black;
+  box-shadow: 0 0 25px 0 var(--secondary-font-color);
   padding: 0 100px;  
   padding-top: 25px;
   background-color: var(--main-color);
@@ -58,7 +59,7 @@ li {
 }
 
 a {  
-  color: white;
+  color: var(--main-font-color);
   text-decoration: none;
 }
 
@@ -105,7 +106,7 @@ li a:hover {
   margin-top: var(--mb-1);
 }
 
-.section-title {
+.section-title {  
   text-align: center;
 }
 
@@ -133,22 +134,66 @@ li a:hover {
 
 /* Section */
 
-#portfolio, #about, #contact {
+.portfolio, .about, .contact {
   padding-top: 125px;  
 }
 
-#portfolio, #about { 
-  height: 825px;
+.portfolio, .about { 
+  height: 825px;  
 }
 
-#about {
-  width: 110%;  
-  margin-left: -5%;
+.about {
+  border: none;  
   background: var(--secondary-font-color);
+  /*background-image: radial-gradient(circle, var(--secondary-font-color) 0%, var(--main-color) 100%);*/
 }
 
-#contact {
+.contact {
   height: 550px;
+}
+
+.portfolio {  
+  width: 90%;  
+  display: table;  
+  align-content: center;  
+}
+
+div, .div-art, .div-gamedev, .div-webapp {
+  margin: auto;
+}
+
+.div-art {
+  display: table-cell;
+  width: 30%;
+}
+
+.div-gamedev {
+  display: table-cell;
+  width: 30%;
+}
+
+.div-webapp {
+  display: table-cell;
+  width: 30%;
+}
+
+.four-by-three-sim, .mobile-phone-sim {
+  border: 1px solid var(--secondary-font-color);
+  border-radius: 15px;
+}
+
+.four-by-three-sim {
+  width: 552px; 
+  height: 167px; 
+}
+
+.mobile-phone-sim {  
+  height: 667px;
+  width: 375px;  
+}
+
+.border {
+  border: 1px solid;
 }
 
 .about-div {  
@@ -156,7 +201,7 @@ li a:hover {
   margin-top: 400px;
 }
 
-.about_text {
+.about-text {
   font-size: large;
   font-style: italic;
   width: 600px;
@@ -206,7 +251,7 @@ li a:hover {
 /* Footer */
 
 .footer{
-  background: var(--main-color);
+  background: var(--secondary-font-color);
   color: var(--main-font-color);
   text-align: center;
   font-weight: var(--font-semi);
@@ -233,7 +278,7 @@ li a:hover {
   margin: 0 var(--mb-2)
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1690px) {
   .nav-options {    
     left: 25%;
     right: 25%;    
@@ -242,7 +287,7 @@ li a:hover {
   .contact-grid {    
     width: 90%;        
     column-gap: 20px;
-  }
+  } 
 }
 
 @media (max-width: 1199.98px) {
@@ -254,6 +299,16 @@ li a:hover {
   li a {
     padding: 40px 40px;
   } 
+
+  .portfolio {    
+    display: grid;
+    padding-top: 0;
+    height: 1500px;
+  }
+
+  .div-art, .div-gamedev, .div-webapp {
+    margin: 0;
+  }
 
   .contact-grid {    
     width: 95%;
@@ -288,11 +343,10 @@ li a:hover {
     margin-top: 550px;
   }
   
-  .about_text {    
-    font-size: large;
-    font-style: italic;
-    width: 100%; 
-    text-align: center;
+  .about-text {    
+    width: auto;
+    font-size: medium;    
+    text-align: center;    
   }
 
   .about-icons {
@@ -302,20 +356,16 @@ li a:hover {
   }
 
 
-  #contact, #about {
+  .contact, .about {
     padding-top: 125px;  
   }
 
-  #contact {
-    height: 700px;
+  .contact {
+    height: 825px;
   } 
 }
 
-@media (max-width: 767.98px) {
-  body {
-    padding: 5px;
-  }
- 
+@media (max-width: 767.98px) { 
   .nav-container {
     display: block;    
   }
