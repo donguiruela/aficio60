@@ -141,6 +141,12 @@ li a:hover {
   width: 175px;
 }
 
+.float-button {  
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .button {  
   background: var(--secondary-font-color);
   border-radius: 25px;
