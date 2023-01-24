@@ -7,8 +7,8 @@
     <title>Aficio60</title>    
     <link rel="icon" type="image/x-icon" href="/assets/img/a.png">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    <link rel="stylesheet" href="">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body id="top">    
    <header class="header-nav">
@@ -19,7 +19,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>            
         </ul>          
-        <a href="" class="button-download">
+        <a href="/assets/downloadable/Don Guiruela  Resume.pdf" target="_blank" class="button-download">
             <div class="button">Open <span class="highlight-color">Résumé</span></div>
         </a>
        </nav>
@@ -28,43 +28,69 @@
    <main>
     <div id="portfolio" class="portfolio">        
         <div class="div-art">
-            <h3>Art Assets</h3>
-            <br>
-            <br>
-            <br>
-            <h3 class="highlight-color">Sorting...</h3>
+            <h3>Creativity</h3>           
         </div>
         <div class="div-gamedev">
             <h3>Game Development</h3>
-            <iframe frameborder="0" src="https://itch.io/embed/1890783" class="four-by-three-sim"><a href="https://donguiruela.itch.io/weigh-logic"  target="_blank">Weigh Logic by Don Guiruela</a></iframe>
-            <br>
-            <br>
-            <br>
-            <h3 class="highlight-color">Uploading...</h3>
+            <div class="games-itch">
+                <iframe frameborder="0" src="https://itch.io/embed/1890783" class="four-by-three-sim"><a href="https://donguiruela.itch.io/weigh-logic"  target="_blank">Weigh Logic by Don Guiruela</a></iframe>           
+                <p class="portfolio-text">Weigh Logic is a physics game that challenges user in balancing a number of balls in a period of time.</p>
+                <h2 class="portfolio-icons">
+                    <i class="devicon-csharp-plain"></i>                    
+                    <i class='devicon-visualstudio-plain'></i>                    
+                    <i class='devicon-unity-original'></i>
+                </h2>
+            </div>            
         </div>
         <div class="div-webapp">
             <h3>Web Application</h3>
-            <iframe frameborder="0" src="https://ten80net.web.app" class="mobile-phone-sim"><a href="https://ten80net.web.app" target="_blank">Ten80neT Dashboard by Don Guiruela</a></iframe>
+
+            <div class="webapp-vertical">
+                <iframe frameborder="0" src="https://ten80net.web.app" name="ten80net-webapp" class="mobile-phone-sim"></iframe>
+                <div class="webapp-description">
+                    <h2 class="typed">\ten80net.web.app</h2>                
+                    <a href="https://ten80net.web.app" target="_blank">
+                        <div class="webapp-button">Open <span class="highlight-color">app</span></div>
+                    </a>
+                    <br>
+                    <br>
+                    <p>A working prototype for selling voucher codes.</p>
+                    <h2>
+                        <i class="devicon-nodejs-plain"></i>                    
+                        <i class='devicon-express-original'></i>                    
+                     <i class='devicon-socketio-original'></i>
+                        <i class='devicon-firebase-plain'></i>
+                    </h2>                
+                </div>
+            </div>
+           
         </div>        
     </div>
     
     <div id="about" class="about">
         <h3 class="section-title">Who is Aficio<span class="highlight-color">60</span>?</h3>
        
+        <div class="pic-holder">
+            <img src="/assets/img/me.png" class="pic-me">
+        </div>
+
         <div class="about-div"> 
             <p class="about-text">I am Don Guiruela, a fourth-year student taking up BS Entertainment and Multimedia
                 Computing, specialized in Game Development. I do some personal projects on
                 C# and Unity. I am also learning basic web app development.</p>            
-            <h1 class="about-icons">
-                <i class='bx bxl-nodejs bx-size'></i>
-                <i class='bx bxl-javascript bx-size'></i>
-                <i class='bx bxl-css3 bx-size'></i>
-                <i class='bx bxl-visual-studio bx-size'></i>            
-                <i class='bx bxl-python bx-size'></i>
-                <i class='bx bxl-c-plus-plus bx-size'></i>
-                <i class='bx bxl-unity bx-size'></i>
-                <i class='bx bxl-blender bx-size'></i>                
-            </h1>
+            <h1 class="about-icons">                                
+                <i class="devicon-csharp-plain"></i>                
+                <i class='devicon-visualstudio-plain'></i>   
+                <i class='devicon-unity-original'></i>
+                <i class='devicon-jetbrains-plain'></i>   
+                <i class='devicon-blender-original'></i>
+                <span class="highlight-color">|</span>
+                <i class='devicon-nodejs-plain'></i>
+                <i class='devicon-javascript-plain'></i>
+                <i class='devicon-css3-plain'></i>                         
+                <i class='devicon-python-plain'></i>
+                <i class='devicon-cplusplus-plain'></i>
+            </h1>            
         </div>    
     </div>      
 
