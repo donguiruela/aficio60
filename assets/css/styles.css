@@ -261,13 +261,9 @@ li a:hover {
   text-align: center;  
 }
 
-.border {
-  border: 1px solid;
-}
-
-.about-div {  
-  margin-left: 200px;
-  margin-top: 400px;
+.about-div{
+  margin-left: 400px;
+  margin-top: 350px;
 }
 
 .pic-holder {    
@@ -367,11 +363,12 @@ li a:hover {
   .contact-grid {    
     width: 90%;        
     column-gap: 20px;
-  } 
+  }   
 
-  .pic-holder {    
-    margin-right: 12%;  
-  }  
+  .about-div{
+    margin-left: 200px;
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -410,6 +407,18 @@ li a:hover {
   .div-art, .div-gamedev, .div-webapp{
     padding: 0;
   }
+  
+  .pic-holder {    
+    float: none;  
+    margin: 0;      
+  }
+
+  .pic-me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+  }
 }
 
 @media (max-width: 991.98px) {  
@@ -430,11 +439,6 @@ li a:hover {
   .button-download {        
     right: 20px;    
   }  
-
-  .about-div {  
-    margin: 0 105px;
-    margin-top: 550px;
-  }
   
   .about-text {    
     width: auto;
@@ -455,6 +459,10 @@ li a:hover {
   .contact {
     height: 825px;
   }
+
+  .about-div{    
+    margin: 150px 25px;
+  }
 }
 
 @media (max-width: 767.98px) { 
@@ -465,11 +473,6 @@ li a:hover {
   .nav-options {
     visibility: hidden;
   } 
-
-  .about-div {  
-    margin: 0 30px;
-    margin-top: 450px;
-  }
 
   .contact-grid {
     width: auto;
