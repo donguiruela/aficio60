@@ -161,7 +161,7 @@ li a:hover {
 }
 
 .portfolio, .about { 
-  height: 825px;  
+  height: 850px;  
 }
 
 .about {
@@ -203,7 +203,8 @@ li a:hover {
   border-radius: 25px;
   padding: 25px;
   padding-bottom: 5px;
-  width: 415px;  
+  width: 415px; 
+  max-height: 525px; 
 }
 
 .port-content-ver {
@@ -214,6 +215,7 @@ li a:hover {
   display: grid;
   grid-template-areas:
   'frame text' ;
+  max-width: 525px;
   height: 525px;
 }
 
@@ -243,9 +245,10 @@ li a:hover {
   width: 375px;  
 }
 
-.webapp-description {
+.webapp-description {  
   grid-area: text;
-  margin-left: -15px;
+  margin-left: -15px;  
+  word-wrap: break-word;
 }
 
 .webapp-button {  
@@ -401,7 +404,7 @@ li a:hover {
   
   .portfolio {    
     padding-top: 75px;
-    height: 1300px;    
+    height: auto;    
   }
 
   .div-art, .div-gamedev, .div-webapp{
@@ -441,7 +444,7 @@ li a:hover {
 
   .about-icons {
     margin: 0;     
-    width: 100%;              
+    width: auto;              
     text-align: center;    
   }
 
