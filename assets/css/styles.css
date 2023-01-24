@@ -187,7 +187,18 @@ li a:hover {
   padding: 0 50px;  
 }
 
-.games-itch{
+.img-min {  
+  border-radius: 25px;
+  width: 300px;
+}
+
+.port-content-grid {
+  display: grid;
+  grid-template-areas:
+  'frame text' ;
+}
+
+.port-content-hor{
   background: var(--secondary-font-color);
   border-radius: 25px;
   padding: 25px;
@@ -195,7 +206,7 @@ li a:hover {
   width: 415px;  
 }
 
-.webapp-vertical {
+.port-content-ver {
   background: var(--secondary-font-color);
   border-radius: 25px;
   padding: 25px;  
