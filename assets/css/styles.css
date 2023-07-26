@@ -289,6 +289,10 @@ li a:hover {
   width: 600px;
 }
 
+.non-italic {
+  font-style: normal;
+}
+
 .about-icons {
   margin-top: 50px;                
 }
